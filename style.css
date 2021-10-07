@@ -1,0 +1,1367 @@
+/*============ GOOGLEFONTS =============*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+/*============ VARIABLESCSS =============*/
+:root{
+    /*============ COLORS =============*/
+    --azulo:#1c1266;
+    --azulc:#006fc1;
+    --negro:#000;
+    --gris: #8f8f8f;
+    --blanco: #fff;
+}
+
+
+
+/*============ RESET =============*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*================================== HEADER ========================================*/
+header{
+    width: 100%;
+    height: 550px;
+    background-image: url(img/Banner_web-01.jpg);
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+}
+
+/*============ HEADER-NAV =============*/
+.contenedor{
+    background-color: #1c1266af;
+    height: 70px;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    height: 100%;
+}
+
+/* .logo img{
+    height: 100%;
+} */
+
+.logo__tittle{
+    color: var(--blanco);
+    font-size: 50px;
+    font-weight: 700;
+    margin-left: 50px;
+    display:inline;
+    text-shadow: -2px 3px 3px var(--azulc);
+    transition:all 0.3s ease;
+}
+
+.logo__tittle:hover{
+    color: var(--azulc);
+    text-shadow: -2px 3px 3px var(--blanco);
+}
+
+
+.contenedor a{
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: 300;
+    margin-right: 30px;
+    transition:all 0.3s ease;
+    display: inline-block;
+}
+
+.enlaces a:hover{
+    color: #0296ff;
+    transform: translateY(-10%);
+}
+
+.menu{
+    height: 100%;
+    width: 70px;
+    text-align: center;
+    display: none;
+}
+
+.menu img{
+    vertical-align: top;
+    padding-top: 15px;
+}
+
+/*============ HEADER-BANNER =============*/
+header .contenedor_banner{
+    margin-top: 120px;
+    z-index: 1;
+    /* animation: movedown 1.2s linear 1;
+    animation-delay: 2s;
+    visibility: hidden;
+    animation-fill-mode: forwards; */
+}
+
+@keyframes movedown {
+    0%{
+        transform: translateY(-100%);
+        visibility: visible;
+    }
+
+    100%{
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+
+.tittle_banner{
+    font-size: 40px;
+    font-weight: 700;
+    animation: movedown 1.2s linear 1;
+    animation-delay: 3s;
+    visibility: hidden;
+    animation-fill-mode:forwards;
+    z-index: 1;
+}
+
+.subtittle_banner{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 3px;
+    animation: movedown 1.2s linear 1;
+    animation-delay: 2s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+
+.cta_banner{
+    display: inline-block;
+    padding: 6px;
+    width: 120px;
+    border: 2px solid var(--blanco);
+    color: var(--blanco);
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: .5rem;
+    margin-top: 20px;
+    transition: all .5s ease;
+}
+
+.cta_banner:hover{
+    background-color: #1c1266af;
+}
+
+/*============ HEADER-WAVE =============*/
+.header__wave{
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+}
+
+/*================================== SERVICIOS ========================================*/
+.servicios{
+    background-color: var(--azulo);
+    position: relative;
+    height: 650px;
+}
+
+.servicios__contenedor{
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    padding: 52px 0;
+}
+
+.servicios__tittle{
+    font-size: 52px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    height: auto;
+    text-align: center;
+    color: var(--blanco);
+    text-shadow: -2px 3px 3px var(--azulc);
+}
+
+.servicios__subtittle{
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 24px;
+    color: var(--blanco);
+}
+
+/*============ SERVICIOS-CARDS =============*/
+.servicios__cards{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    /* align-items: center; */
+}
+
+.cards{
+    margin: 20px 0 ;
+    width: 25%;
+    height: 250px;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--blanco);
+    box-shadow: -5px 19px 18px 1pxx rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: -5px 19px 18px 1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -5px 19px 18px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 1.5rem;
+    color: var(--azulo);
+    transition: all .5s ease;
+}
+
+.cards:hover{
+    box-shadow: -5px 19px 40px 11px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: -5px 19px 40px 11px  rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -5px 19px 40px 11px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transform: translateY(-5%);
+}
+
+.cards:hover .cards__tittle{
+    color: var(--azulc);
+}
+
+.cards img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.cards__tittle{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.cards__info{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/*============ SERVICIOS-WAVE =============*/
+.servicos__wave{
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+}
+
+
+/*============ SERVICIOS-MODAL =============*/
+.servicios__modal-container{
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    background-color:hsla(247, 72%, 14%, 0.877);
+    width: 100%;
+    height: 100vh;
+    top:0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.servicios__modal{
+    background-color: #fff;
+    width: 70%;
+    height: 70%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    transition: transform .5s;
+    transform: translateY(0%);
+    z-index: 3;
+}
+
+.modal-close{
+    transform: translateY(-150%);
+}
+
+.close{
+    position: absolute;
+    top:15px;
+    right: 15px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: var(--azulc);
+    color: #fff;
+    cursor: pointer;
+    line-height: 25px;
+    border-radius: 50%;
+    font-weight: 700;
+    z-index: 4;
+    transition: .5s;
+}
+
+.close:hover{
+    background-color: var(--azulo);
+}
+
+.modal__img{
+    display: block;
+    height: 50%;
+    animation: scale 1s 2s backwards;
+}
+
+.modal__parrafo{
+    line-height: 1.5;
+    margin: 1em 2em;
+}
+
+.modal__titulo{
+    color: var(--azulo);
+}
+
+/* .modal__img{
+    height: 50%;
+    animation: scale 1s 2s backwards;
+    transform: scale(0);
+} */
+
+/* .open{
+    transform: scale(1);
+} */
+
+@keyframes scale {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+/*================================== DE.MARIO ========================================*/
+.drmario{
+    background-color: #dbdbdb;
+    position: relative;
+    height: 600px;
+}
+
+.drmario__contenedor{
+    width: 90%;
+    max-width: 900px;
+    min-height: 500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 50px;
+}
+
+/*============ DE.MARIO-IMG =============*/
+.drmario__img{
+    text-align: center;
+    width: 360px;
+    height: 400px;
+}
+
+/*============ DE.MARIO-TEXT =============*/
+.drmario__textos{
+    justify-self: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.drmario__tittle{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 1px;
+    font-weight: 700;
+    color:var(--azulo);
+    text-shadow: -2px 3px 3px var(--blanco)
+
+}
+
+.drmario__subtittle{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color:var(--azulo);
+}
+
+.drmario__description{
+    margin-top: 20px;
+    font-size: 18px;
+    color: var(--azulo);
+}
+
+.drmario__cta{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 6px;
+    width: 160px;
+    border: 2px solid var(--blanco);
+    color: var(--blanco);
+    font-size: 20px;
+    border-radius: .5rem;
+    margin-top: 20px;
+    background-color: var(--azulo);
+    box-shadow: -5px 19px 18px 1pxx rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: -5px 19px 18px 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: -5px 19px 18px 1px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
+
+.drmario__cta:hover{
+    cursor: pointer;
+    background-color: var(--azulc);
+    box-shadow: -5px 19px 40px 11px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: -5px 19px 40px 11px  rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: -5px 19px 40px 11px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transform: translateY(-5%);
+}
+
+/*============ DR.MARIO-WAVE =============*/
+.drmario__wave{
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+}
+
+/*================================== SOMOS ========================================*/
+.somos{
+    background-color:#4eb1d8;
+}
+
+.somos__contenedor{
+    width: 90%;
+    max-width: 900px;
+    min-height: 500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 50px;
+}
+
+/*============ SOMOS-IMG =============*/
+.somos__img{
+    text-align: center;
+    width: 100%;
+    height: 400px;
+}
+
+/*============ SOMOS-TEXT =============*/
+.somos__textos{
+    justify-self: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.somos__tittle{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 1px;
+    font-weight: 700;
+    color:var(--blanco);
+    text-shadow: -2px 3px 3px var(--azulo)
+
+}
+
+.somos__subtittle{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color:var(--azulo);
+}
+
+.somos__description{
+    margin-top: 20px;
+    font-size: 18px;
+    color: var(--blanco);
+}
+
+.somos__info{
+    margin: 20px auto;
+    width: 70%;
+    display: flex;
+    justify-content:space-between;
+}
+
+.somos__info-title,
+.somos__info-name{
+    display: block;
+    text-align: center;
+    color: var(--blanco);
+}
+
+.somos__info-title{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.somos__info-contenedor{
+    margin: 0px auto;
+}
+
+.somos__info-name{
+    font-size: 15px;
+}
+
+.somos__cta{
+    text-decoration: none;
+    display: inline-block;
+    padding: 6px;
+    width: 160px;
+    border: 2px solid var(--blanco);
+    color: var(--blanco);
+    font-size: 20px;
+    border-radius: .5rem;
+    margin-top: 20px;
+    background-color: var(--azulo);
+    box-shadow: -5px 19px 18px 1pxx rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: -5px 19px 18px 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: -5px 19px 18px 1px rgba(0, 0, 0, 0.3);
+    transition:  0.5s;
+}
+
+.somos__cta:hover{
+    cursor: pointer;
+    /* background-color: var(--azulc); */
+    box-shadow: -5px 19px 40px 11px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: -5px 19px 40px 11px  rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: -5px 19px 40px 11px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    background-color: var(--blanco);
+    color: var(--azulo);
+    transform: translateY(-5%);
+}
+
+
+/*================================== CONTACTANOS ========================================*/
+.contactanos{
+    background-color: var(--azulo);
+    height: 500px;
+    background-image: url(img/Banner_web-02.jpg);
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-size: cover;
+    /* position: relative; */
+}
+
+.contactanos__contenedor{
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    padding: 52px 0;
+}
+
+.contactanos__tittle{
+    font-size: 52px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    height: auto;
+    text-align: center;
+    color: var(--blanco);
+    text-shadow: -2px 3px 3px var(--azulc);
+}
+
+/*============ CONTACTANOS-CARDS =============*/
+.contactanos__cards{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cards__contac{
+    margin: 20px 0 ;
+    width: 20%;
+    height: 230px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(5, 140, 236, 0.557);
+    box-shadow: -5px 19px 18px 1pxx rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: -5px 19px 18px 1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -5px 19px 18px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 1.5rem;
+    color: var(--blanco);
+    transition: all .5s ease;
+    border: 4px solid var(--blanco);
+}
+
+
+.cards__contac img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom:15px;
+}
+
+.cards__contac-tittle{
+    font-size: 20px;
+    font-weight: 700;
+    transition: all .3s ease;
+}
+
+.cards__contac-info{
+    font-size: 14px;
+    font-weight: 300;
+    transition: all .3s ease;
+}
+
+.cards__contac:hover{
+    box-shadow: -5px 19px 40px 11px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: -5px 19px 40px 11px  rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -5px 19px 40px 11px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transform: translateY(-5%);
+}
+
+.cards__contac:hover .cards__contac-tittle{
+    color: var(--azulo);
+}
+
+.cards__contac:hover .cards__contac-info{
+    font-weight: 700;
+}
+
+/* <!--========== CONTACTANOS-MODAL ==========--> */
+
+.contactanos__modal-container{
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    background-color:hsla(247, 72%, 14%, 0.877);
+    width: 100%;
+    height: 100vh;
+    top:0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.contactanos__modal{
+    background-color: rgba(5, 140, 236, 0.557);
+    width: 70%;
+    height: 70%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    transition: transform .5s;
+    transform: translateY(0%);
+    z-index: 3;
+    border: 6px solid var(--blanco);
+}
+
+.modals-close{
+    transform: translateY(-150%);
+}
+
+.close_s{
+    position: absolute;
+    top:15px;
+    right: 15px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: var(--azulc);
+    color: #fff;
+    cursor: pointer;
+    line-height: 25px;
+    border-radius: 50%;
+    font-weight: 700;
+    z-index: 4;
+    transition: .5s;
+}
+
+.close_s:hover{
+    background-color: var(--azulo);
+}
+
+.modal__imgs{
+    display: block;
+    height: 50%;
+    animation: scale 1s 2s backwards;
+}
+
+.modals__titulo{
+    line-height: 1.5;
+    margin: .5em .5em;
+    color: var(--blanco);
+}
+
+.modals__parrafo{
+    color: var(--blanco);
+    font-size: 20px;
+}
+
+/*================================== FOOTER ========================================*/
+.footer{
+    background-color: var(--azulo);
+    padding: 20px 0;
+}
+
+.footer__container{
+    width: 90%;
+    margin: auto;
+}
+
+.footer__logo{
+    height: 70px;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.footer__logo a{
+    text-decoration: none;
+
+}
+
+.footer__logo .logo__tittle{
+    color: var(--blanco);
+    font-size: 50px;
+    font-weight: 700;
+    margin-left: 60px;
+    display:inline;
+    text-shadow: -2px 3px 3px var(--azulc);
+    transition:all 0.3s ease;
+}
+
+.footer__logo .logo__tittle:hover{
+    color: var(--azulc);
+    text-shadow: -2px 3px 3px var(--blanco);
+}
+
+
+/* .footer__logo-picture{
+    height: 250px;
+} */
+
+ul{
+    list-style: none;
+}
+
+.footer__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-evenly;
+    max-width: 900px;
+}
+
+.footer__col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer__tittle{
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--azulc);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer__tittle::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--blanco);
+    height: 3px;
+    width: 50px;
+}
+
+.footer__col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer__col ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--blanco);
+    font-weight: 300;
+    display: block;
+    transition:all 0.3s ease;
+}
+
+.footer__col ul li a:hover{
+    color: var(--azulc);
+    padding-left: 10px;
+}
+
+.footer__redes a{
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    background-color: var(--azulc);
+    border-radius: 50%;
+    margin: 5px 5px 0;
+    text-align: center;
+    line-height: 65px;
+    transition:all 0.3s ease;
+}
+
+.footer__redes a:hover{
+    background-color: var(--gris);
+}
+
+.footer__redes img{
+    width: 30px;
+    height: 30px;
+}
+
+.footer__line{
+    width: 75%;
+    height: 5px;
+    background-color: var(--blanco);
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.footer__derechos{
+    width: 90%;
+    margin: auto;
+}
+
+.footer__derechos-copy{
+    font-size: 15px;
+    color: var(--blanco);
+    font-weight: 300;
+    text-align: center;
+}
+
+/*================================= SCROLL UP =====================================*/
+
+.scroll-up{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    background-color:var(--azulc);
+    /* opacity: .8; */
+    padding: 0.3rem;
+    border-radius: 100%;
+    z-index: 1;
+    transition: .4s;
+}
+
+.scroll-up:hover{
+    background-color: var(--azulo);
+}
+
+.scroll-up img{
+    width: 40px;
+    height: 40px;
+}
+
+/* Show Scroll */
+.show-scroll{
+    bottom: 5rem;
+}
+
+/*================================ SCROLL BAR ========================================*/
+::-webkit-scrollbar{
+    width: .6rem;
+    background-color: var(--blanco);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--azulo);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--azulc);
+}
+
+
+/*================================ RESPONSIVE ========================================*/
+
+/* Grendes Pantallas */
+@media screen and (min-width:1000px){
+    /*================================ HEADER ====================================*/
+    header{
+        height: 700px;
+    }
+
+    header .contenedor_banner{
+        margin-top: 200px;
+    }
+
+
+    .tittle_banner{
+        font-size: 50px;
+    }
+
+    .subtittle_banner{
+        font-size: 30px;
+        margin-bottom: 3px;
+    }
+
+
+     /*================================ SERVICIOS ====================================*/
+
+     .drmario__tittle{
+        font-size: 35px;
+    }
+
+    .drmario__subtittle{
+        font-size: 25px;
+    }
+
+    .drmario__description{
+        font-size: 20px;
+    }
+
+    /*================================ SOMOS ====================================*/
+
+    .somos__tittle{
+        font-size: 35px;
+    }
+
+    .somos__description{
+        font-size: 20px;
+    }
+
+}
+
+/* Grendes medianas (Tables mini laptos) */
+
+@media screen and (max-width:960px){
+
+    /*================================ Dr.MARIO ====================================*/
+
+     .drmario{
+        height: 800px;
+    }
+
+    .drmario__contenedor{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        overflow: hidden;
+    }
+
+    .drmario__img{
+        text-align: center;
+        width: 100%;
+        height: 300px;
+    }
+
+    .drmario__textos{
+     width: 70%;
+    }
+
+    .drmario__cta{
+        margin-bottom: 35px;
+    }
+
+    .drmario__cta:hover{
+        box-shadow: -5px 15px 20px 5px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: -5px 15px 20px 5px  rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: -5px 15px 20px 5px rgba(0, 0, 0, 0.3);
+    }
+
+     /*================================ SOMOS====================================*/
+
+
+    .somos{
+        height: 850px;
+    }
+
+    .somos__contenedor{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        overflow: hidden;
+    }
+
+    .somos__img{
+        text-align: center;
+        width: 100%;
+        height: 300px;
+    }
+
+    .somos__textos{
+       width: 70%;
+       order: 1;
+    }
+
+    .somos__info{
+        margin: 20px auto;
+        width: 70%;
+        display: flex;
+        justify-content:space-between;
+    }
+
+    .__cta{
+        margin-bottom: 35px;
+    }
+
+    .__cta:hover{
+        box-shadow: -5px 15px 20px 5px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: -5px 15px 20px 5px  rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: -5px 15px 20px 5px rgba(0, 0, 0, 0.3);
+    }
+
+}
+
+@media screen and (max-width:930px){
+
+    .contactanos{
+        height: 700px;
+    }
+
+    .contactanos__cards{
+        width: 70%;
+    }
+
+    .cards__contac{
+        margin: 30px 20px;
+        width: 35%;
+        height: 200px;
+        text-align: center;
+        padding: 20px;
+    }
+
+}
+
+@media screen and (max-width:830px){
+    .cards img{
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width:760px){
+
+    .contactanos__cards{
+        width: 80%;
+    }
+}
+
+@media  screen and (max-width: 660px){
+
+    header{
+        background-attachment: fixed;
+    }
+
+    /*================================ SERVICIOS ====================================*/
+    .servicios{
+        height: 1300px;
+    }
+
+    .servicios__contenedor{
+        width:70%
+    }
+
+    .cards{
+        margin: 30px 30px;
+        width: 70%;
+        max-width: 182px;
+        min-width: 180px;
+        height: 280px;
+        text-align: center;
+        padding: 20px;
+    }
+    .cards img{
+        width: 90px;
+        height: 90px;
+    }
+
+     /*================== SERVICES MODAL =====================*/
+
+    .modal__img{
+        height: 30%;
+    }
+
+    /*================================ DR.MARIO ====================================*/
+    .drmario{
+        height: 820px;
+    }
+
+    .drmario__tittle{
+        font-size: 25px;
+    }
+
+    .drmario__cta{
+        margin-bottom: 35px;
+    }
+
+    .drmario__cta:hover{
+        box-shadow: -5px 15px 20px 5px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: -5px 15px 20px 5px  rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: -5px 15px 20px 5px rgba(0, 0, 0, 0.3);
+    }
+    .drmario__textos{
+        width: 85%;
+    }
+
+    /* .drmario__img{
+        width: 320px;
+    }
+
+    .drmario__picture{
+        width: 320px;
+    } */
+
+    /*================================ SOMOS ====================================*/
+
+    .somos{
+        height: 720px;
+    }
+
+    .somos__contenedor{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        overflow: hidden;
+    }
+
+    .somos__img{
+        text-align: center;
+        width: 100%;
+        height: 260px;
+    }
+
+    .somos__textos{
+       width: 70%;
+       order: 1;
+    }
+
+    .somos__tittle{
+        font-size: 25px;
+    }
+
+    .somos__textos{
+        width: 90%;
+    }
+
+    .somos__info{
+        /* margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 5px;
+        margin-right: 5px; */
+        margin: 20px auto;
+        width: 70%;
+        display: flex;
+        justify-content:space-between;
+    }
+
+    .somos__cta{
+        margin-bottom: 35px;
+    }
+
+    .somos__cta:hover{
+        box-shadow: -5px 15px 20px 5px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: -5px 15px 20px 5px  rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: -5px 15px 20px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .somos__picture{
+        width: 340px;
+    }
+
+    /* .somos__info-title{
+        font-size: 20px;
+    }
+
+    .somos__info-name{
+        font-size: 12px;
+    } */
+
+
+        /*================================ CONTACTANOS ====================================*/
+
+        .contactanos{
+            background-attachment: fixed;
+        }
+
+        .contactanos__tittle{
+            font-size: 40px;
+        }
+
+        .contactanos{
+            height: 1320px;
+        }
+
+        .contactanos__contenedor{
+            width: 70%;
+        }
+
+        .cards__contac{
+            margin: 30px 0 ;
+            width: 70%;
+            min-width: 180px;
+            height: 220px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .modal__imgs{
+            height: 40%;
+        }
+        
+        .modals__parrafo{
+           font-size: 15px;
+        }
+
+        .contactanos__modal{
+            height: 60%;
+        }
+
+
+         /*================================ FOOTER ====================================*/
+
+         .footer{
+            background-color: var(--azulo);
+            padding: 20px 0;
+            height: 740px;
+         }
+
+        .footer__col{
+            width: 70%;
+            padding: 15px 15px;
+        }
+
+        .footer__logo{
+            justify-content: center;
+        }
+
+        .footer__derechos{
+            width: 90%;
+        }
+
+        .footer__derechos-copy{
+            font-size: 15px;
+
+        }
+
+        .footer__line{
+            width: 75%;
+            height: 5px;
+            background-color: var(--blanco);
+            border-radius: 50%;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+
+}
+
+@media  screen and (max-width: 400px){
+
+    /*================================ DR.MARIO ====================================*/
+    .drmario{
+        height: 920px;
+    }
+
+    .drmario__img{
+        width: 320px;
+    }
+
+    .drmario__picture{
+        width: 320px;
+    }
+
+    /*================================ SOMOS ====================================*/
+    .somos{
+        height: 740px;
+    }
+
+    .somos__info-title{
+        font-size: 20px;
+    }
+
+    .somos__info-name{
+        font-size: 12px;
+    }
+
+
+}
+
+@media screen and (max-width:800px) {
+    .logo__tittle{
+        color: var(--blanco);
+        font-size: 50px;
+        font-weight: 700;
+        margin-left: 10px;
+    }
+    .menu{
+        display: block;
+        z-index:1;
+    }
+
+    .enlaces{
+        position: fixed;
+        background-color: #1c1266af;
+        right: 0;
+        top: 70px;
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        /* justify-content: space-evenly; */
+        align-items:flex-start;
+        text-align: right;
+        flex-direction: column;
+        transform: translateX(100%);
+        padding-left: 40px;
+        z-index: 1;
+    }
+
+    .enlaces a{
+        margin-top: 40px;
+        font-weight: 700;
+        font-size: 15px;
+    }
+
+    .enlaces2{
+        transform: translateX(0%);
+    }
+
+}
+
